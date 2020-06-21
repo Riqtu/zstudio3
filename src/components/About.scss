@@ -1,0 +1,41 @@
+.About{
+    position: fixed;
+    top: 20%;
+    width: 30%;
+    transition: 1s;
+    opacity: 0;
+    overflow-y: none;  
+    left: 20%;
+    // padding: 20%;
+    p{
+        font-size: 20pt;
+    }
+    animation: startAbout 0.7s ease-in-out forwards;
+    @media screen and (max-width : 1100px) {
+        left: 10%;
+        width: 70%;
+        p{
+            font-size: 20pt;
+        }
+    }
+    @media screen and (max-width : 500px) {
+        left: 10%;
+        width: 70%;
+        p{
+            font-size: 15pt;
+        }
+    }
+}
+// .active{
+//     opacity: 1;
+// }
+@keyframes startAbout{
+    0%{
+        top: 30%;
+        opacity: 0;
+    }
+    100%{
+        top: 20%;
+        opacity: 1;
+    }
+}

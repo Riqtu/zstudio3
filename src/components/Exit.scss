@@ -1,0 +1,20 @@
+@import '../var.scss';
+.exit{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 120px;
+    height: 35px;
+    background-color: $mainColor;
+    z-index: 10000;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+    will-change: transform; 
+}
+.exit:hover{
+    background-color: rgb(122, 47, 53);
+}

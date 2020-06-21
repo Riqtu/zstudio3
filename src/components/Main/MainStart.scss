@@ -1,0 +1,61 @@
+@import './../../var.scss';
+
+
+$randomNumber: random(50) + pt;
+
+.mainStart{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: $mainColor;
+    z-index: 100000;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+.start-container{
+    position: relative;
+    .cont-char{
+        font-size: random(100) + pt;
+        font-weight: 800;
+        float: left;
+        transition: 1s;
+    }
+    // .start{
+    //     transition: 1s;
+    //     background-color: black;
+    //     animation: sec-char 2s ;
+    // }
+}
+
+@keyframes start-char{
+    0%{
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+    65%{
+        // opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes sec-char{
+    0%{
+        transform: translateY(0vh);
+        opacity: 1;
+    }
+    55%{
+        opacity: 1;
+        // transform: translateY(-10px);
+    }
+
+    100%{
+        transform: translate(-100vh, $randomNumber) scale(5, 5);
+        opacity: 0;
+    }
+}

@@ -1,0 +1,76 @@
+.Viewers{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    animation: start 1s forwards ease-in-out;
+    z-index: 103 !important;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: hidden;
+    height: 100vh;
+    background-color: #1F1F1F;
+    background-image: url('../img/ViewersImg/Group.png');
+    top:0 ;
+    will-change: transform; 
+}
+.Viewers__main{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    min-height: 100%;
+    background-size: cover;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    img{
+        margin-left: 25%;
+        width: 50%;
+    }
+    .main-topText, .main-bottomText{
+        position: absolute;
+        width: auto;
+        white-space: nowrap;
+        font-weight: 700;
+        font-size: 20pt;
+        top: 17%;
+        animation: goleft 60s forwards infinite ;
+        will-change: transform; 
+    }
+    .main-bottomText{
+        top: auto;
+        bottom: 17%;
+        animation: goRight 60s forwards infinite ;
+    }
+    .circle{
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        border-radius: 100%;
+        background-color: white;
+        left: calc(50% - 40px);
+        top: calc(100% - 40px);
+    }
+}
+.Viewers__about{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: white;
+}
+@keyframes goleft{
+    0%{
+        transform: translateX(0)
+    }
+    100%{
+        transform: translateX(-70%)
+    }
+}
+@keyframes goRight{
+    0%{
+        transform: translateX(-70%)
+    }
+    100%{
+        transform: translateX(0%)
+    }
+}

@@ -1,0 +1,11 @@
+.Preloader{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+    transition: 1s;
+    z-index: 150;
+}
+.activePreloader{
+    opacity: 0;
+}

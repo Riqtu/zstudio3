@@ -1,0 +1,307 @@
+.Seasons{
+    position: fixed;
+    width: 100%;
+    // height: 100%;
+    background-color: #0F4C81;
+    animation: start 1s forwards ease-in-out;
+    z-index: 103 !important;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: none; 
+    top:0 ;
+    will-change: transform; 
+}
+.Seasons__section{
+    position: relative;
+    width: 100%;
+    height: calc(var(--vh, 1vh) * 100);
+    min-height: 700px;
+    background-image: url('./../img/background.svg');
+    background-size: contain;
+
+}
+.main-container{
+    overflow: hidden;
+    position: absolute;
+    width: 95%;
+    height: 92%; 
+    min-height: 500px;
+    top: 4.4%;
+    left: 2.5%;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,0.14), 0 1px 18px 0 rgba(0,0,0,0.12), 0 3px 5px 0 rgba(0,0,0,0.20);
+    .backCircle{
+        img{
+            width: 60%;
+            margin-left: 20%;
+            margin-top: 20%;
+            animation: rotate 60s infinite linear;
+            opacity: 0.1;
+        }
+    }
+}
+.main-logo{
+    top: 20px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    img{
+        width: 20%;
+    }
+}
+.main-text{
+    top:0;
+    position: absolute;
+    width: 53%;
+    height: 100%;
+    padding-left: 20px;
+    padding-top: 10%;
+    @media screen and (max-width : 500px) {
+        width: 90%;
+    }
+    h1{
+        font-weight: 800;
+        font-size: 38pt;
+        color: rgb(26, 26, 26);
+        @media screen and (max-width : 500px) {
+            font-size: 23pt;
+        }
+    }
+    p{
+        font-weight: 300;
+        font-size: 20pt;
+        color: rgb(26, 26, 26);
+        @media screen and (max-width : 500px) {
+            font-size: 15pt;
+        }
+    }
+
+}
+
+.main-img{
+    position: absolute;
+    top:0;
+    width: 47%;
+    left: 53%;
+    height: 100%;
+    img{
+        position: absolute;
+        width: 80%;
+        top: 15%;
+        left: auto;
+        right: 5%;
+        @media screen and (max-width : 500px) {
+            top: 0;
+            right: 0;
+            left: 0;
+            width: 100%;
+        }
+    }
+    @media screen and (max-width : 500px) {
+        left: 15%;
+        top:auto;
+        bottom: 0;
+        height: 36%;
+        width: 70%;
+    }
+}
+
+.delivery-container{
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    min-height: 400px;
+
+    // background-color: black; 
+    padding-top: 5%;
+    img{
+        position: absolute;
+        margin-left: 20%;
+        width: 60%;
+        @media screen and (max-width : 500px) {
+            width: 80%;
+            margin-left: 10%;
+        }
+    }
+    .mockup{
+        padding-top: 5%;
+        margin-left: 0;
+        top: 0px;
+        // margin-left: 14%;
+        width: 150%;
+        animation: translate 15s infinite linear;
+        @media screen and (max-width : 500px) {
+            padding-top: 55%;
+        }
+    }
+    @media screen and (max-width : 500px) {
+        padding-top: 50%;
+    }
+}
+.about-container{
+    position: relative;
+    width: 100%;
+    min-width: 500px;
+    min-height: 500px;
+    background-image: url('./../img/background.svg');
+    background-size: contain;
+    @media screen and (max-width: 650px) {
+        min-width: 100%;
+        min-height: 1500px;
+    }
+    article{
+        position: relative;
+        width: 33.33%;
+        min-width: 340px;
+        height: 500px;
+        min-height: 500px;
+        float: left;
+        display: gird;
+        justify-content: center;
+        align-content: center;
+        @media screen and (max-width: 650px) {
+            width: 100%;
+
+        }
+    }
+    .article-container{
+        position: absolute;
+        width: 70%;
+        left: 15%;
+        height: 90%;
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: 0 6px 10px 0 rgba(0,0,0,0.14), 0 1px 18px 0 rgba(0,0,0,0.12), 0 3px 5px 0 rgba(0,0,0,0.20);
+    }
+    .article-logo{
+        position: relative;
+        height: 40%;
+        width: 100%;
+        display: grid;
+        align-content: center;
+        img{
+            margin-left: 35%;
+            width: 30%;
+        }
+    }
+    .article-text{
+        position: relative;
+        width: 90%;
+        margin-left: 5%;
+        height: 60%;
+        text-align: center;
+        font-size: 15pt;
+        color: black;
+    }
+    .article-label{
+        position: absolute;
+        top: -35px;
+        color: black;
+        font-size: 16pt;
+        width: 100%;
+        text-align: center;
+        font-weight: 800;
+        color: white;
+    }
+    .response{
+        animation: respScale 4s infinite linear;
+    }
+    .react{
+        animation: rotate 10s infinite linear;
+    }
+    .artist{
+        animation: artist 3s infinite linear;
+    }
+
+
+
+}
+
+
+footer{
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    display:grid;
+    justify-content: center;
+    align-content: center;
+    background-image: url('./../img/background.svg');
+    background-size: contain;
+    img{
+        width: 80%;margin-left: 10%;;
+    }
+        p{
+        position: relative;
+        font-size: 23pt;
+        font-weight: 800;
+        text-align: center;
+        @media screen and (max-width : 500px) {
+            font-size: 15pt;;
+        }
+        a{
+            color: white;
+        }
+        }
+        @media screen and (max-width : 500px) {
+            img{
+                width: 80%;margin-left: 10%;;
+            }
+        }
+        img{
+            filter: invert(100%);
+        }
+}
+
+
+
+
+@keyframes scale{
+    0%,100%{
+        transform: scale(1, 1)
+    }
+    50%{
+        transform: scale(1.1, 1.1)
+    }
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(0)
+    }
+    100%{
+        transform: rotate(360deg)
+
+    }
+}
+
+@keyframes translate{
+    0%{
+        transform: translate(-0%, 0)
+    }
+    100%{
+        transform: translate(-50%, 0)
+
+    }
+}
+
+@keyframes artist{
+    0%,100%{
+        filter: invert(0)
+    }
+    50%{
+        filter: invert(100%)
+
+    }
+}
+
+@keyframes respScale{
+    0%,100%{
+        transform: scale(1.05, 1)
+    }
+    50%{
+        transform: scale(1, 1)
+
+    }
+}

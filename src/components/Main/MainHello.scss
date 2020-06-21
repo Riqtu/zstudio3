@@ -1,0 +1,111 @@
+@import 'src/var.scss';
+
+.MainHello{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow-x: none;  
+}
+section{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+}
+
+.mainHello__text{
+    position: absolute;
+    width: 52%;
+    margin-top: 14%;
+    left: 50px;
+    @media screen and (max-width : 500px) {
+        left: 10px;
+    }
+    // padding: 40%;
+    // animation: flash 1.3s ease-in-out forwards;
+    h1{
+        font-size: 60pt;
+        
+    }
+    p{
+        margin-top: -10%;
+        font-size: 25pt;
+        font-weight: 800;
+    }
+    @media screen and (max-width : 500px) {
+        width: 90%;
+        h1{
+            font-size: 40pt;
+        }
+        p{
+            font-size: 17pt;
+        }
+    }
+}
+.mainHello__more{
+    position: absolute;
+    width: 500px;
+    height: 200px;
+    // background-color: blue;
+    top: auto;
+    bottom: 0;
+    left: auto;
+    right: 0;
+    display: grid;
+    align-content: center;
+    p{
+        width: 70%;
+        font-size: 15pt;
+        margin-left: 20px;
+        // animation: flash 1.3s ease-in-out forwards;
+    }
+    .more-line{
+        position: absolute;
+        width: 5px;
+        height: 100%;
+        background-color: white;
+        animation: line 6s ease-in-out infinite;
+        // transform: rotate(180deg);
+    }
+    @media screen and (max-width : 500px) {
+        bottom: 5%;
+        width: 260px;
+        height: 200px;
+        p{
+            font-size: 10pt;
+            width: 80%;
+        }
+    }
+}
+@keyframes line{
+    0%{
+        height: 0%;
+        top: 100%
+    }
+    45%{
+        height: 100%;
+        top: 0%
+    }
+    50%{
+        height: 100%;
+        top: 0%
+    }
+    55%{
+        height: 100%;
+        top: 0%
+    }
+    100%{
+        height: 0;
+        top: 100%
+    }
+}
+@keyframes flash{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes type{
+    from { width: 0; }
+}
