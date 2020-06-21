@@ -8,12 +8,17 @@ import Fade from 'react-reveal/Fade'
 import cn from 'classnames'
 import Section from './Main/Section/Section'
 
+import Header from '../components/Header.jsx'
+
 function Main(props) {
+  const [hidden] = useState(false)
+
   const [menu, setMenu] = useState(false)
   props.menu(menu)
 
   return (
     <div className={cn('Main', { hidden: props.hidden })}>
+      <Header menu={menu} hidden={hidden} />
       <Fade>
         <MainHello />
       </Fade>
