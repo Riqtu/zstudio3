@@ -4,5 +4,6 @@ import fvt from './img/endflat.png'
 import where from './img/where.png'
 import forsmart from './img/Logo/logo.svg'
 import macaroni from './img/logo.png'
+import battleship from './img/Logo/battleship.svg'
 
-export default { bronya, seasons, fvt, where, forsmart, macaroni }
+export default { bronya, seasons, fvt, where, forsmart, macaroni, battleship }
